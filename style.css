@@ -4,26 +4,33 @@
 }
 
 header{
-  margin: 20px 50px;
   font-family: 'Red Hat Display', sans-serif;
   background-position: center;
   text-align: center;
   background-image: url("images/panorama.jpg");
   background-repeat: no-repeat;
-  margin-top: 20px;
+  background-size: cover;
+  background-attachment: fixed;
   color: #FFFFFF;
 }
 
 h1{
   font-size: 50px;
-  padding-top: 80px;
+  padding-top: 180px;
   padding-bottom: 20px;
 }
 
 h2{
   font-size: 20px;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
+}
+
+p{
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .container > div {
@@ -40,11 +47,12 @@ a{
 }
 .container{
   margin: 20px 0px;
-  font-family: 'Pacifico', cursive;  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(494px, 1fr));
-  grid-template-rows:  300px 300px;
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
 }
 
@@ -52,27 +60,181 @@ a{
   background-image: url("images/summer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .container > div:nth-child(2n) {
   background-image: url("images/winter.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .container > div:nth-child(3n) {
   background-image: url("images/bike.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .container > div:nth-child(4n) {
   background-image: url("images/autumn.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
-*/
+
+.food {
+  font-family: 'Satisfy', cursive;
+  background-image: url("images/food.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+footer {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
+  margin: 20px 0px;
+  padding: 15px 15px;
+  background-color: #03A9F4;
+}
+
+
+
+/*Summer*/
+
+
+
+.summer header{
+  font-family: 'Red Hat Display', sans-serif;
+  background-position: center;
+  text-align: center;
+  background-image: url("images/lake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.summer h1{
+  font-size: 50px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+}
+
+.summer h2{
+  font-size: 20px;
+  padding-bottom: 180px;
+}
+
+.summer > .container{
+  margin: 20px 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+.summer > .container > div:nth-child(1n) {
+  background-image: url("images/winter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.summer > .container > div:nth-child(2n) {
+  background-image: url("images/bike.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.summer > .container > div:nth-child(3n) {
+  background-image: url("images/autumn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/*Winter*/
+
+
+.winter header{
+  font-family: 'Red Hat Display', sans-serif;
+  background-position: center;
+  text-align: center;
+  background-image: url("images/inverno.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.winter h1{
+  font-size: 50px;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.winter h2{
+  font-size: 20px;
+  padding-bottom: 200px;
+}
+
+.winter > .container{
+  margin: 20px 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+.winter > .container > div:nth-child(1n) {
+  background-image: url("images/summer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.winter > .container > div:nth-child(2n) {
+  background-image: url("images/bike.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.winter > .container > div:nth-child(3n) {
+  background-image: url("images/autumn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
