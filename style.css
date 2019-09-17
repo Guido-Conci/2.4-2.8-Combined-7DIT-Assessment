@@ -60,7 +60,7 @@ a{
   background-image: url("images/summer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -69,7 +69,7 @@ a{
   background-image: url("images/winter.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -78,7 +78,7 @@ a{
   background-image: url("images/bike.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
 }
@@ -87,9 +87,28 @@ a{
   background-image: url("images/autumn.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
+}
+
+.map {
+  position:relative;
+  text-align:center;
+  margin-top: 20px;
+}
+
+.map h2{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  color: #212121;
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none;
 }
 
 .food {
@@ -98,17 +117,20 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
   color: #FFFFFF;
 }
 
 footer {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 15px;
   margin: 20px 0px;
   padding: 15px 15px;
-  background-color: #03A9F4;
+  background-color: #689F38;
+}
+
+footer p{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
 }
 
 
@@ -138,6 +160,20 @@ footer {
   padding-bottom: 180px;
 }
 
+.lake{
+  background-image: url("images/lago.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
 .summer > .container{
   margin: 20px 0px;
   font-family: 'Pacifico', cursive;
@@ -153,7 +189,7 @@ footer {
   background-image: url("images/winter.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -162,7 +198,7 @@ footer {
   background-image: url("images/bike.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -171,13 +207,15 @@ footer {
   background-image: url("images/autumn.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
 
+
 /*Winter*/
+
 
 
 .winter header{
@@ -216,7 +254,7 @@ footer {
   background-image: url("images/summer.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -225,7 +263,7 @@ footer {
   background-image: url("images/bike.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -234,7 +272,88 @@ footer {
   background-image: url("images/autumn.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+
+
+/*Spring*/
+
+
+
+.spring header{
+  font-family: 'Red Hat Display', sans-serif;
+  background-position: center;
+  text-align: center;
+  background-image: url("images/spring.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.spring h1{
+  font-size: 50px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+}
+
+.spring h2{
+  font-size: 20px;
+  padding-bottom: 180px;
+}
+
+.spring > .container{
+  margin: 20px 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+.spring > .container > div:nth-child(1n) {
+  background-image: url("images/summer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.spring > .container > div:nth-child(2n) {
+  background-image: url("images/winter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.spring > .container > div:nth-child(3n) {
+  background-image: url("images/autumn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.motorcycle{
+  margin-top: 20px;
+  background-image: url("images/motorcycle.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.motorcycle h1, h2{
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  padding: 180px auto;
 }
