@@ -26,6 +26,7 @@ h2{
   padding-bottom: 180px;
 }
 
+
 p{
   font-family: 'Red Hat Display', sans-serif;
   text-align: center;
@@ -34,11 +35,11 @@ p{
 }
 
 .container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #FFFFFF;
 }
 
 a{
@@ -122,17 +123,30 @@ a{
   color: #FFFFFF;
 }
 
-footer {
-  margin: 20px 0px;
-  padding: 15px 15px;
-  background-color: #689F38;
-}
-
-footer p{
+.footer p{
   font-family: 'Red Hat Display', sans-serif;
   font-size: 15px;
+  padding: 15px 15px;
 }
 
+.footer a{
+  color: #212121;
+  text-decoration: underline;
+}
+
+nav{
+  padding: 40px;
+}
+
+.footer{
+  margin: 20px 0px;
+  background-color: #689F38;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
 
 
 /*Summer*/
@@ -238,6 +252,31 @@ footer p{
   font-size: 20px;
   padding-bottom: 200px;
 }
+
+.ski{
+  margin-top: 20px;
+  background-image: url("images/ski.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ski h1{
+  color: #212121;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  padding: 200px auto;
+}
+
+.ski h2{
+  color: #212121;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+  padding: 180px auto;
+}
+
 
 .winter > .container{
   margin: 20px 0px;
@@ -356,4 +395,69 @@ footer p{
   font-family: 'Red Hat Display', sans-serif;
   font-size: 20px;
   padding: 180px auto;
+}
+
+
+
+/*Autumn*/
+
+
+
+.autumn header{
+  font-family: 'Red Hat Display', sans-serif;
+  background-position: center;
+  text-align: center;
+  background-image: url("images/autunno.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.autumn h1{
+  font-size: 50px;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.autumn h2{
+  font-size: 20px;
+  padding-bottom: 200px;
+}
+
+.autumn > .container{
+  margin: 20px 0px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+.autumn > .container > div:nth-child(1n) {
+  background-image: url("images/summer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.autumn > .container > div:nth-child(2n) {
+  background-image: url("images/winter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.autumn > .container > div:nth-child(3n) {
+  background-image: url("images/bike.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
